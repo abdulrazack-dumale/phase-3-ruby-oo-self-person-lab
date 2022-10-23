@@ -3,12 +3,12 @@ class Person
     attr_accessor :bank_account
     attr_reader :name, :happiness, :hygiene
 
-    def initialize(name, bank_account = 25, happiness = 8 , hygiene = 8 )
+    def initialize(name)
         @name = name
-        @bank_account = bank_account
-        @happiness = happiness
-        @hygiene = hygiene
-    end
+        @bank_account = 25
+        @happiness = 8
+        @hygiene = 8
+      end
     def happiness=(value)
         @happiness = 
         if value >10
